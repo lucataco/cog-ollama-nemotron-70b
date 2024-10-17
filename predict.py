@@ -44,7 +44,7 @@ class Predictor(BasePredictor):
         # Download weights - comment out to use ollama to donwload the weights
         print("Downloading weights")
         if not os.path.exists(MODEL_CACHE):
-            download_weights(MODEL_URL, MODEL_CACHE)
+            download_weights(MODEL_URL, '.')
 
         # Start server
         print("Starting ollama server")
